@@ -24,3 +24,4 @@ class TestDie(unittest.TestCase):
 
     def test_upper(self):
         self.assertEqual(self.die.sides, 6)
+        # adding a dummy line
