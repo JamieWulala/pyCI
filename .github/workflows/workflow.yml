@@ -1,12 +1,12 @@
 name: CodeCov
 on: [push, pull_request]
 
-CODECOV_TOKEN: 'e9cb0b1c-7597-4cb8-9d81-0f5d5be9d1c8'
 
 jobs:
   run:
     runs-on: ubuntu-latest
     env:
+      CODECOV_TOKEN: 'e9cb0b1c-7597-4cb8-9d81-0f5d5be9d1c8'
       OS: ubuntu-latest
       PYTHON: '3.9'
     steps:
