@@ -1,1 +1,2 @@
-comment: true
+comment:
+  layout: "reach, diff"
