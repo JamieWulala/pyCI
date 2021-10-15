@@ -1,4 +1,5 @@
 from random import randint
+import unittest
 
 class RollableDie:
     def __init__(self, sides=6):
@@ -16,3 +17,10 @@ class DiceBag:
 
     def roll_bag(self):
         return list(map(lambda dice: dice.roll(), self.dice))
+
+class TestDie(unittest.TestCase):
+    def setUp(self):
+        self.die = RollableDie()
+
+    def test_upper(self):
+        self.assertEqual(self.die.sides, 6)
